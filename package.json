@@ -1,0 +1,25 @@
+{
+  "name": "batchnov1230pm_adactin",
+  "version": "1.0.0",
+  "description": "This is the initial Commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrendknowledgesOmr/BatchNov1230PM_Adactin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/TrendknowledgesOmr/BatchNov1230PM_Adactin/issues"
+  },
+  "homepage": "https://github.com/TrendknowledgesOmr/BatchNov1230PM_Adactin#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.65.1"
+  }
+}
