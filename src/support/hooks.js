@@ -1,6 +1,7 @@
 import { Before, After, setDefaultTimeout } from "@cucumber/cucumber";
 import { chromium } from '@playwright/test';
 import LoginPage from "../pages/adactin.login.js";
+import SearchPage from "../pages/adactin.search.js";
 setDefaultTimeout(30000);
 
 Before(async function () {
@@ -11,6 +12,7 @@ Before(async function () {
     this.context = null;
     this.page = null;
     this.loginPage = null;
+    this.searchPage = null;
 
     // Creating the instances
 
@@ -19,7 +21,9 @@ Before(async function () {
     this.page = await this.context.newPage();
 
     // Creating the page object
-    this.loginPage = new LoginPage(this.page)
+    this.loginPage = new LoginPage(this.page) 
+    this.searchPage = new SearchPage(this.page) 
+
 });
 
 
