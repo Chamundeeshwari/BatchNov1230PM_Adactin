@@ -7,8 +7,9 @@ export default class LoginPage {
         this.loginbutton = this.page.locator('//input[@id="login"]')
     }
 
-    async navigateTo() {
+     async navigateTo() {
         await this.page.goto('https://adactinhotelapp.com/');
+        await this.page.waitForTimeout(3000);
         
     }
     async enterusername(username) {
